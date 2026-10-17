@@ -2,20 +2,17 @@ name: Docker Build CI
 
 on:
   push:
-   branches:
-    - main
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
   build:
-   run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-   steps:
-    - name: checkout repository
-      uses: actions/checkout@v4
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-   - name: Build Docker image
-     run: docker build -t github-actions-practice:latest .
-
-
-
+      - name: Build Docker image
+        run: docker build -t github-actions-practice:latest .
