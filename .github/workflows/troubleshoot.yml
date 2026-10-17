@@ -1,0 +1,14 @@
+name: Trobleshooting practice
+
+on:
+  workflow_dispatch: 
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Run a command
+      run: ech "hello!"
+
+  
