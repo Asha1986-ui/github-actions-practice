@@ -9,6 +9,6 @@ jobs:
 
     steps:
     - name: Run a command
-      run: ech "hello!"
+      run: echo "hello!"
 
   
